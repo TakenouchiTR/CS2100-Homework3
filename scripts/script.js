@@ -55,7 +55,8 @@ function getRandomColor() {
     let color = "#"
 
     for (let i = 0; i < COLOR_DIGIT_LENGTH; ++i) {
-        color += HEX_CHARS.charAt(randomRange(HEX_CHARS.length))
+        let index = randomRange(HEX_CHARS.length)
+        color += HEX_CHARS.charAt(index)
     }
 
     return color
